@@ -52,6 +52,12 @@
     <Compile Include="comojugar.Designer.cs">
       <DependentUpon>comojugar.cs</DependentUpon>
     </Compile>
+    <Compile Include="configuracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="configuracion.Designer.cs">
+      <DependentUpon>configuracion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="comojugar.resx">
       <DependentUpon>comojugar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="configuracion.resx">
+      <DependentUpon>configuracion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

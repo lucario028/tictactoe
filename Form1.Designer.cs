@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,18 +46,9 @@
             this.user33 = new System.Windows.Forms.Label();
             this.user32 = new System.Windows.Forms.Label();
             this.user31 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::tictactoe.Properties.Resources.numeral;
-            this.pictureBox1.Location = new System.Drawing.Point(84, 55);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(372, 381);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -132,6 +122,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(618, 52);
             this.label4.TabIndex = 4;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label8
             // 
@@ -155,6 +146,7 @@
             this.label9.Size = new System.Drawing.Size(109, 23);
             this.label9.TabIndex = 10;
             this.label9.Text = "Configuración";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // user11
             // 
@@ -263,6 +255,16 @@
             this.user31.TabIndex = 17;
             this.user31.Text = "X";
             this.user31.Click += new System.EventHandler(this.user31_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::tictactoe.Properties.Resources.numeral;
+            this.pictureBox1.Location = new System.Drawing.Point(84, 55);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(372, 381);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 

@@ -28,6 +28,8 @@ namespace tictactoe
             user31.Text = "";
             user32.Text = "";
             user33.Text = "";
+
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -158,6 +160,62 @@ namespace tictactoe
         {
             comojugar comojugar = new comojugar();
             comojugar.Show();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            configuracion configuracion = new configuracion();
+            configuracion.ShowDialog();
+
+            if (juego.chcolor == 1)
+            {
+                if (juego.colorfondo == 1)
+                {
+                    BackColor = Color.White;
+                }
+
+                else if (juego.colorfondo == 2)
+                {
+                    BackColor = Color.Red;
+                }
+
+                else if (juego.colorfondo == 3)
+                {
+                    BackColor = Color.Yellow;
+                }
+
+                else if (juego.colorfondo == 4)
+                {
+                    BackColor = Color.Green;
+                }
+                else if (juego.colorfondo == 5)
+                {
+                    BackColor = Color.Black;
+                }
+
+                else
+                {
+                    BackColor = Color.White;
+                }
+            }
+            else
+            {
+                MessageBox.Show("No se aplicaron los cambios");
+            }
+
+            juego.chcolor = 0;
+            // 1 BLANCO
+            // 2 ROJO
+            // 3 AMARILLO
+            // 4 VERDE
+            // 5 NEGRO
+
+           
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
